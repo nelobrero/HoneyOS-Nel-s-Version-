@@ -1,49 +1,60 @@
 document.addEventListener('DOMContentLoaded', function() {
-            const drawer = document.getElementById('drawer');
-            const additionalContainer = document.getElementById('additional-container');
-            const content = document.getElementById('content');
-            let lastClickTime = 0; // Variable to store the timestamp of the last click
-            
-            // Function to toggle the additional container
-            function toggleAdditionalContainer() {
-                additionalContainer.classList.toggle('active');
-            }
-            
-            // Add event listener to the document to toggle the drawer
-            document.addEventListener('click', function(event) {
-                const clickX = event.clientX; // X-coordinate of the click event
-                const screenWidth = window.innerWidth; // Width of the screen
-                
-                // Calculate the time difference since the last click
-                const currentTime = new Date().getTime();
-                const timeDiff = currentTime - lastClickTime;
-                
-                // Check if the click occurs on the left half of the screen and if it's not a double click
-                if (clickX <= (screenWidth / 7) && timeDiff > 300) { // Adjust the delay as needed (300 milliseconds)
-                    // Toggle the drawer's visibility by changing its left position
-                    drawer.style.left = (drawer.style.left === '0px') ? '-250px' : '0px';
-                    
-                    // Move the content to the right when the drawer is open
-                    content.style.marginLeft = (drawer.style.left === '0px') ? '250px' : '0';
-                    
-                    // Update the last click time
-                    lastClickTime = currentTime;
-                }
-            });
-            
-            // Function to toggle voice recognition
-            function toggleVoiceRecognition() {
-                // Your logic for toggling voice recognition here
-                console.log('Voice recognition toggled');
-            }
-            
-            // Add event listener to the voice recognition button within the drawer
-            const voiceToggleButton = document.getElementById('voice-toggle');
-            voiceToggleButton.addEventListener('click', toggleVoiceRecognition);
-            
-            // Add event listener to hide the drawer on double-click
-            document.addEventListener('dblclick', function(event) {
-                drawer.style.left = '-250px'; // Hide the drawer
-                content.style.marginLeft = '0'; // Reset content margin
-            });
-        });
+    const drawer = document.getElementById('drawer');
+    const additionalContainer = document.getElementById('additional-container');
+    const content = document.getElementById('content');
+    let isCursorOnLeft = false; // Variable to track cursor position
+    let isCursorOnDrawer = false; // Variable to track cursor position on drawer
+
+    // Function to toggle additional container
+    function toggleAdditionalContainer() {
+        additionalContainer.classList.toggle('active');
+    }
+
+    // Function to show the drawer
+    function showDrawer() {
+        drawer.style.left = '0px';
+        content.style.marginLeft = '250px';
+    }
+
+    // Function to hide the drawer
+    function hideDrawer() {
+        drawer.style.left = '-250px';
+        content.style.marginLeft = '0';
+    }
+
+    // Add event listener to the document to toggle the drawer
+    document.addEventListener('mousemove', function(event) {
+        const clickX = event.clientX; // X-coordinate of the cursor
+        const screenWidth = window.innerWidth; // Width of the screen
+
+        // Check if the cursor is on the very left side of the screen
+        isCursorOnLeft = clickX <= (screenWidth / 150); // Adjust the ratio as needed
+
+        // Show or hide the drawer based on cursor position
+        if (isCursorOnLeft || isCursorOnDrawer) {
+            showDrawer();
+        } else {
+            hideDrawer();
+        }
+    });
+
+    // Add event listener to track cursor position on drawer
+    drawer.addEventListener('mousemove', function(event) {
+        isCursorOnDrawer = true;
+    });
+
+    // Add event listener to reset cursor position on drawer exit
+    drawer.addEventListener('mouseleave', function(event) {
+        isCursorOnDrawer = false;
+    });
+
+    // Function to toggle voice recognition
+    function toggleVoiceRecognition() {
+        // Your logic for toggling voice recognition here
+        console.log('Voice recognition toggled');
+    }
+
+    // Add event listener to the voice recognition button within the drawer
+    const voiceToggleButton = document.getElementById('voice-toggle');
+    voiceToggleButton.addEventListener('click', toggleVoiceRecognition);
+});

@@ -135,6 +135,13 @@ body {
 }
 
 
+.logo1 {
+    max-width: 100%;
+    max-height: 200px;
+    z-index: 2;
+
+}
+
 .hexagon-container {
   position: absolute;
   top: 30%; /* Adjust this value to move the hexagons up or down */
@@ -148,8 +155,8 @@ body {
 
 .hexagon-container1 {
   position: absolute;
-  top: 11%; /* Adjust this value to move the hexagons up or down */
-  right: 12.45%; /* Adjust this value to move the hexagons left or right */
+  top: 11.2%; /* Adjust this value to move the hexagons up or down */
+  right: 13.56%; /* Adjust this value to move the hexagons left or right */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,8 +164,8 @@ body {
 }
 .hexagon-container1-1 {
   position: absolute;
-  top: 11.5%; /* Adjust this value to move the hexagons up or down */
-  right: 12.78%; /* Adjust this value to move the hexagons left or right */
+  top: 11.8%; /* Adjust this value to move the hexagons up or down */
+  right: 13.9%; /* Adjust this value to move the hexagons left or right */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,8 +174,8 @@ body {
 
 .hexagon-container2 {
   position: absolute;
-  top: 33.5%; /* Adjust this value to move the hexagons up or down */
-  right: 12.4%; /* Adjust this value to move the hexagons left or right */
+  top: 34%; /* Adjust this value to move the hexagons up or down */
+  right: 13.5%; /* Adjust this value to move the hexagons left or right */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,8 +184,8 @@ body {
 
 .hexagon-container3 {
   position: absolute;
-  top: 45%; /* Adjust this value to move the hexagons up or down */
-  right: 16.3%; /* Adjust this value to move the hexagons left or right */
+  top: 45.3%; /* Adjust this value to move the hexagons up or down */
+  right: 17.4%; /* Adjust this value to move the hexagons left or right */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,8 +194,8 @@ body {
 
 .hexagon-container4 {
   position: absolute;
-  top: 56.4%; /* Adjust this value to move the hexagons up or down */
-  right: 4.8%; /* Adjust this value to move the hexagons left or right */
+  top: 56.6%; /* Adjust this value to move the hexagons up or down */
+  right: 5.9%; /* Adjust this value to move the hexagons left or right */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,8 +204,8 @@ body {
 
 .hexagon-container5 {
     position: absolute;
-    top: -0.5%; /* Adjust this value to move the hexagons up or down */
-    right: 1%; /* Adjust this value to move the hexagons left or right */
+    top: -0.1%; /* Adjust this value to move the hexagons up or down */
+    right: 17.4%; /* Adjust this value to move the hexagons left or right */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,7 +215,62 @@ body {
   .hexagon-container6{
     position: absolute;
     top: 68%; /* Adjust this value to move the hexagons up or down */
-    right: 1%; /* Adjust this value to move the hexagons left or right */
+    right: 9.8%; /* Adjust this value to move the hexagons left or right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .hexagon-container6-1{
+    font-size: 50px;
+    font-weight: lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 68%; /* Adjust this value to move the hexagons up or down */
+    right: 55.5%; /* Adjust this value to move the hexagons left or right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+
+  .hexagon-container8 {
+    position: absolute;
+    top: 79.4%; /* Adjust this value to move the hexagons up or down */
+    right: -1.79%; /* Adjust this value to move the hexagons left or right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .hexagon-container8-1 {
+    position: absolute;
+    top: 79.4%; /* Adjust this value to move the hexagons up or down */
+    right: 74.8%; /* Adjust this value to move the hexagons left or right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .hexagon-container9 {
+    position: absolute;
+    top: 90.8%; /* Adjust this value to move the hexagons up or down */
+    right: 9.8%; /* Adjust this value to move the hexagons left or right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .hexagon-container10 {
+    position: absolute;
+    top: -11.5%; /* Adjust this value to move the hexagons up or down */
+    right: 5.8%; /* Adjust this value to move the hexagons left or right */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,6 +386,85 @@ body {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
 
+  .hexagon6-1{
+    width: 110px;
+    height: 120px;
+    background-color: #ffc700;
+    border-color: #ffc700;
+    border-width: 10px;
+    position: relative;
+    margin: 4px; /* Adjust this value to increase or decrease the space between hexagons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    filter: brightness(1); /* Set initial color to blackscale */
+  }
+  .hexagon6-1:hover {
+    background-color: #000000; /* Color on hover */
+    filter: brightness(1); /* Set initial color to blackscale */
+  }
+
+
+  .hexagon8 {
+    width: 110px;
+    height: 120px;
+    background-color: #ffc700;
+    position: relative;
+    margin: 4px; /* Adjust this value to increase or decrease the space between hexagons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
+  .hexagon8-1 {
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 110px;
+    height: 120px;
+    background-color: #ffc700;
+    position: relative;
+    margin: 4px; /* Adjust this value to increase or decrease the space between hexagons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    filter: brightness(1); /* Set initial color to blackscale */
+}
+
+.hexagon8-1:hover {
+  background-color: #000000;
+
+    filter: brightness(1); /* Set initial color to blackscale */
+}
+
+
+  .hexagon9 {
+    width: 110px;
+    height: 120px;
+    background-color: #ffc700;
+    position: relative;
+    margin: 4px; /* Adjust this value to increase or decrease the space between hexagons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
+  .hexagon10 {
+    width: 110px;
+    height: 120px;
+    background-color: #ffc700;
+    position: relative;
+    margin: 4px; /* Adjust this value to increase or decrease the space between hexagons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
 /* CSS styles for the icons */
 .icon {
     max-width: 40%;
@@ -383,8 +524,8 @@ body {
 }
 
 #editor-container {
-  width: 50%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
   background-color: rgb(0, 0, 0);
   color: #ffffff;
   position: absolute;
@@ -395,7 +536,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  z-index: 2;
+  z-index: 1;
 }
 
 #editor-container.hidden {
@@ -403,7 +544,7 @@ body {
 }
 
 #editor-header {
-  background-color: #0B1215;
+  background-color: #000000;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -416,6 +557,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: 20px;
+
 }
 
 #editor-headerIcons2 {
@@ -426,8 +569,8 @@ body {
 }
 
 .editor-icon {
-  width: 17px;
-  height: 17px;
+  width: 24px;
+  height: 30px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -437,11 +580,31 @@ body {
     height: 13px;
     margin-right: 10px;
     cursor: pointer;
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
   }
+
+
+.label{
+  font-family:Arial, Helvetica, sans-serif;
+  color: #ffc700;
+  font-size: 12px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
   
 
 #code-editor {
   background-color: #0B1215;
+  color: #0B1215;
+  font-family: Arial, Helvetica, sans-serif;
   flex-grow: 1;
   border: none;
   padding: 10px;
@@ -461,6 +624,7 @@ body {
   display: flex;
   justify-content: center;
   transition: bottom 0.5s ease;
+  z-index: 10;
 }
 
 #taskbar.hidden {
@@ -480,10 +644,10 @@ body {
   left: -250px; /* Start hidden */
   width: 250px;
   height: 100%;
-  background-color: #0B1215;
+  background-color: #0C0C0C;
   color: #fff;
   transition: left 0.3s ease-in-out;
-  z-index: 1; /* Set a higher z-index for the logo */
+  z-index: 2; /* Set a higher z-index for the logo */
 }
 
 .drawer ul {
@@ -546,12 +710,6 @@ body {
   /* height: 180px; Adjust size to accommodate the expansion */
 /* } */
 
-#hexagon-container6 {
-  position: relative;
-  width: 200px;
-  height: 115.47px; /* Adjust height based on the width */
-  margin: 57.74px 0;
-}
 
 .hexagon-wrapper {
   display: flex;
@@ -583,6 +741,27 @@ body {
     display: flex;
   }
 
+  .hexagon-wrapper6-1 {
+    display: flex;
+  }
+
+  .hexagon-wrapper8 {
+    display: flex;
+  }
+
+  .hexagon-wrapper8-1 {
+    display: flex;
+  }
+
+  .hexagon-wrapper9 {
+    display: flex;
+  }
+
+  .hexagon-wrapper10 {
+    display: flex;
+  }
+
+
 .hexagon:hover {
   background-color: #0B1215; /* Color on hover */
 }
@@ -593,7 +772,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #0B1215;
+  background-color: #000000;
 }
 
 .hexagon-container7 {
@@ -604,7 +783,7 @@ body {
 .hexagon7 {
     width: 110px;
     height: 120px;
-    background-color: #0B1215; /* Default background color */
+    background-color: #000000; /* Default background color */
     position: absolute;
     margin: 3px; /* Adjust this value to increase or decrease the space between hexagons */
     display: flex;
@@ -628,25 +807,28 @@ body {
 /* DATE AND TIME */
 
 .datetime {
-    font-weight: lighter;
-    justify-content: center;
-    align-items: center;
-    color: #ffc700;
-    z-index: 1; /* Move hexagons to the background */
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack elements vertically */
+  font-weight: lighter;
+  justify-content: center;
+  align-items: center;
+  color: #ffc700;
+  z-index: 1; /* Move hexagons to the background */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  font-family:Georgia, 'Times New Roman', Times, serif; /* Change font family */
 }
 
 .time {
-    font-size: 50px;
-    justify-content: center;
+  font-size: 50px;
+  justify-content: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Change font family */
 }
 
 .date {
-    font-size: 15px;
-    /* Adjust position as needed */
-    margin-top: 3px; /* Add margin to create space between time and date */
-    color:#ffc700; /* Adjust color as needed */
+  font-size: 15px;
+  /* Adjust position as needed */
+  margin-top: 3px; /* Add margin to create space between time and date */
+  color: #ffc700; /* Adjust color as needed */
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif /* Change font family */
 }
 
 
@@ -735,5 +917,8 @@ body {
     opacity: 1;
 }
 
-
+.grayed-out {
+  opacity: 0.5;
+  pointer-events: none;
+}
   
